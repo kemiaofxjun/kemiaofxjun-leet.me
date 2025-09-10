@@ -1,10 +1,13 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useDark } from '@vueuse/core'
 
 const isDark = useDark()
+const isClient = ref(false)
 
 onMounted(() => {
+  isClient.value = true
+
   // 注入样式
   const styleLink = document.createElement('link')
   styleLink.rel = 'stylesheet'
@@ -27,7 +30,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="friend-circle-lite" :class="{ dark: isDark }">
+  <section v-if="isClient" class="friend-circle-lite" :class="{ dark: isDark }">
     <h2>📰 友链朋友圈 Lite</h2>
     <div id="friend-circle-lite-root">
       加载中…
