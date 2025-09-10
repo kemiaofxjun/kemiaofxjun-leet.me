@@ -4,6 +4,10 @@ display: 克喵的鱼塘页
 art: random
 ---
 
-<fc />
+<template>
+  <ClientOnly>
+    <Fc />
+  </ClientOnly>
+</template>
 
 <div flex-auto />
