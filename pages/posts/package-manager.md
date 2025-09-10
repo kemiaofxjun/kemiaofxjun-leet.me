@@ -26,7 +26,7 @@ art: random
 - 若包名存在一些符号，将符号去除后不得与现有包名重复
   > `react-native`存在即不能创建`reactnative`
 - 如果包名和现有的包名太相近导致不能发布，你可以发布到自己的作用域下
-  > 比如`leet`, 那么发布的包可以说`@leet/hooks`
+  > 比如`KeMiao`, 那么发布的包可以说`@KeMiao/hooks`
 
 #### 查看包是否被占用
 
@@ -55,14 +55,14 @@ art: random
 // 每个人员信息包含下面三个字段或者时一个字符串描述
 {
   "author": {
-    "name": "Leet",
+    "name": "KeMiao",
     "email": "1414395519@qq.com",
     "url": "https://github.com/skyline523"
   },
   "contributors": [
     "a contributor ......",
     {
-      "name": "Leet",
+      "name": "KeMiao",
       "email": "1414395519@qq.com",
       "url": "https://github.com/skyline523"
     }

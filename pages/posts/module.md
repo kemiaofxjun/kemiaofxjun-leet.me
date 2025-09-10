@@ -233,7 +233,7 @@ exports.bar = bar
 module.exports = {}
 
 // or
-const name = 'leet'
+const name = 'KeMiao'
 module.exports.name = name
 
 // 重复使用module.exports整个赋值会覆盖上一次的赋值
@@ -343,10 +343,10 @@ counter 输出后，lib.js 模块内部的变化就影响不到 counter 了。�
 - 默认：export default
 
 ```js
-export const name = 'Leet'
+export const name = 'KeMiao'
 
 // or
-// const name = 'Leet'
+// const name = 'KeMiao'
 // export { name }
 
 // or 别名

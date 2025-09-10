@@ -51,7 +51,7 @@ art: plum
 - 变量: `let baseUrl = 'http://www.google.com/'`
 - 方法/函数: `function handleClick() {}` `const handleClick = () => {}`
 - 类/构造函数: `class User {}` `function User() {}`
-- 对象 `key`: `const user = { firseName: 'Leet' }`
+- 对象 `key`: `const user = { firseName: 'KeMiao' }`
 - 路由 `path`: `path: '/user-info'`
 
 ::: tip

@@ -43,12 +43,12 @@ JavaScript 对未声明变量的处理方式: 在全局对象上创建该变量�
 
 ```js
 function foo(arg) {
-  bar = 'Leet'
+  bar = 'KeMiao'
 }
 
 // 等同于
 function foo2(arg) {
-  window.bar = 'Leet'
+  window.bar = 'KeMiao'
 }
 ```
 
@@ -56,14 +56,14 @@ function foo2(arg) {
 
 ```js
 function foo(arg) {
-  this.val = 'Leet'
+  this.val = 'KeMiao'
 }
 
 // 当在全局作用域下调用foo函数，此时this指向的是全局对象window，而不是'undefined'
 foo()
 ```
 
-此时，解释器会把变量`name`当作`window`的属性来创建（`window.name = 'Leet'`）。只要在`window`对象上创建的属性，只要`window`本身不被清理就不会消失。这个问题很容易解决:
+此时，解释器会把变量`name`当作`window`的属性来创建（`window.name = 'KeMiao'`）。只要在`window`对象上创建的属性，只要`window`本身不被清理就不会消失。这个问题很容易解决:
 
 - 只要在变量声明前加上`let`或`const`关键字即可，这样变量就会在函数执行完毕后离开作用域。
 - 在文件中添加`use strict`开启严格模式可以有效避免
@@ -71,7 +71,7 @@ foo()
 ```js
 function foo(arg) {
   'use strict'
-  bar = 'Leet' // 报错bar未声明
+  bar = 'KeMiao' // 报错bar未声明
 }
 ```
 
@@ -79,7 +79,7 @@ function foo(arg) {
 
 ```js
 function foo(arg) {
-  window.bar = 'Leet'
+  window.bar = 'KeMiao'
 }
 ```
 
@@ -106,11 +106,11 @@ function foo(msg) {
   return closure
 }
 
-const bar = foo('leet')
-bar() // 'leet'
+const bar = foo('KeMiao')
+bar() // 'KeMiao'
 ```
 
-在函数 foo 内创建的函数 closure 对象是不能被回收掉的，因为它被全局变量 bar 引用，处于一直可访问状态。通过执行`bar()`可以打印出`leet`。如果想释放掉可以将`bar = null`即可。
+在函数 foo 内创建的函数 closure 对象是不能被回收掉的，因为它被全局变量 bar 引用，处于一直可访问状态。通过执行`bar()`可以打印出`KeMiao`。如果想释放掉可以将`bar = null`即可。
 
 > 由于闭包会携带包含它的函数的作用域，因此会比其他函数占用更多的内存。过度使用闭包可能会导致内存占用过多。
 

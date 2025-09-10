@@ -45,7 +45,7 @@ art: random
 
 ```
 
-PS E:\personal\leet.me> pnpm install
+PS E:\personal\KeMiao.me> pnpm install
 Lockfile is up to date, resolution step is skipped
 Packages: +763
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -53,10 +53,10 @@ Progress: resolved 763, reused 763, downloaded 0, added 0, done
 node_modules/.pnpm/sharp@0.32.6/node_modules/sharp: Running install script, failed in 11.6s
 .../sharp@0.32.6/node_modules/sharp install$ (node install/libvips && node install/dll-copy && prebuild-install) || (node install/can-compile && node-gyp rebuild && node install/dll-copy)
 │ sharp: Using existing vendored libvips v8.14.5
-│ sharp: Creating E:\personal\leet.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\build\Release
-│ sharp: Copying DLLs from E:\personal\leet.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\vendor\8.14.5\win32-x64\lib to E:\personal\leet.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\build\Rel…
+│ sharp: Creating E:\personal\KeMiao.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\build\Release
+│ sharp: Copying DLLs from E:\personal\KeMiao.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\vendor\8.14.5\win32-x64\lib to E:\personal\KeMiao.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp\build\Rel…
 │ prebuild-install warn install aborted
-│ E:\personal\leet.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp>if not defined npm_config_node_gyp (node "C:\Users\Admin\AppData\Roaming\npm\node_modules\pnpm\dist\node-gyp-bin\\..\node_modules\node-g…
+│ E:\personal\KeMiao.me\node_modules\.pnpm\sharp@0.32.6\node_modules\sharp>if not defined npm_config_node_gyp (node "C:\Users\Admin\AppData\Roaming\npm\node_modules\pnpm\dist\node-gyp-bin\\..\node_modules\node-g…
 │ gyp info it worked if it ends with ok
 │ gyp info using node-gyp@9.4.1
 │ gyp info using node@20.10.0 | win32 | x64
